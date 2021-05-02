@@ -1,0 +1,13 @@
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.exe
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.deps.json
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.runtimeconfig.json
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.runtimeconfig.dev.json
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.dll
+C:\Users\sean\source\repos\Monpoke\Monpoke\bin\Debug\netcoreapp3.1\Monpoke.pdb
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.csprojAssemblyReference.cache
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.AssemblyInfoInputs.cache
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.AssemblyInfo.cs
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.csproj.CoreCompileInputs.cache
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.dll
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.pdb
+C:\Users\sean\source\repos\Monpoke\Monpoke\obj\Debug\netcoreapp3.1\Monpoke.genruntimeconfig.cache
