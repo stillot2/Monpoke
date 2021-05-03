@@ -16,13 +16,6 @@ namespace Monpoke
             AP = attackPower;
             HP = hitPoints;
         }
-        public bool IsAlive
-        {
-            get
-            {
-                return this.HP > 0;
-            }
-        }
         
     }
 }

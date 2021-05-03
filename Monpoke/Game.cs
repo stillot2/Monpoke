@@ -12,11 +12,9 @@ namespace Monpoke
         public Team currentTeam;
         public Team nextTeam;
 
-        public bool valid = true;
-
-        public bool battle = false;
-
-        public bool gameOver = false;
+        public bool valid;
+        public bool battle;
+        public bool gameOver;
 
         public Dictionary<String, Team> teams = new Dictionary<string, Team>();
         public enum Create
@@ -31,20 +29,22 @@ namespace Monpoke
             MONPOKE_ID = 1
         };
 
-        // create <team-id> <monpoke-id> <hp> <attack>
-        // attack
-        // ichooseyou <monpoke-id>
         public Game (StringBuilder sb)
         {
             output = sb;
+            currentTeam = null;
+            nextTeam = null;
+            valid = true;
+            battle = false;
+            gameOver = false;
         }
 
         public void ParseInput(String input)
         {
             String split = " ";
-
             String[] inputArgs = Regex.Split(input, split);
             String command = inputArgs[0];
+
             switch (command)
             {
                 case "CREATE":
@@ -88,10 +88,14 @@ namespace Monpoke
             if (valid)
             {
                 Monpoke monpoke = currentTeam.MonpokeList.FirstOrDefault(monpoke => string.Equals(monpoke.Name, monpokeID, StringComparison.OrdinalIgnoreCase));
-                if (monpoke != null)
+                if (monpoke != null && currentTeam.MonpokeActive != monpoke)
                 {
                     currentTeam.MonpokeActive = monpoke;
                     output.AppendLine($"{monpoke.Name} has entered the battle!");
+                }
+                else if (currentTeam.MonpokeActive == monpoke)
+                {
+                    // pass -- unclear how to handle
                 }
                 else
                 {
@@ -102,7 +106,10 @@ namespace Monpoke
 
         public void validateGame()
         {
-            if (teams.Count != 2) valid = false;
+            if (teams.Count != 2)
+            {
+                valid = false;
+            }
         }
 
         private void commandCreate(string teamID, string monpokeID, string HP, string AP)

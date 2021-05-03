@@ -13,11 +13,13 @@ namespace Monpoke
             if (args == null || args.Length == 0)
             {
                 // read from console
+                // Monpoke.exe < input.txt
                 fileContents = Console.In.ReadToEnd();
             }
             else
             {
                 // read from arg[0]
+                // Monpoke.exe input.txt
                 fileContents = File.ReadAllText(args[0]);
             }
 
